@@ -1,3 +1,18 @@
+window.onload = function(){
+
+    var http = new XMLHttpRequest();
+
+    http.onreadystatechange = function(){
+        console.log(http);
+    }
+
+    http.open("GET", "data/tweets.json", true);
+    http.send();
+    //console.log(http);
+
+
+}
+
 /* Ready States
 
 0 - request not initialized
